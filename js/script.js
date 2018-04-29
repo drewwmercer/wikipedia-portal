@@ -15,12 +15,20 @@ $(document).ready(function () {
 
                 $('#output').html('');
 
-                for (var i = 0; i < data[1].length; i++)
-                    $('#output').prepend("<li><a href="+data[3][i]+">"+data[1][i]+"</a><p>"+data[2][i]+"</p></li>");
+                for (var i = 0; i < data[1].length; i++) {
+                    $('#output').prepend("<li><a href=" + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
+                }
+                $('#searchInput').val('');
             },
             error: function (errorMessage) {
-                alert("Error")
+                console.log("Error: " + errorMessage)
             }
         })
+    })
+
+    $('#searchInput').keypress(function (e) {
+        if (e.which == 13) {
+            $('#search').click();
+        }
     })
 })
