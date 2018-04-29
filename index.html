@@ -17,16 +17,22 @@
 <body>
 
     <div class="container">
-        <div class="text-center">
+        <div class="text-center" id="topBox">
             <h1>Wikipedia Portal</h1>
             <h4>Click the globe to go to a random wiki, or search for a specific wikipedia topic</h4>
             <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">
                 <img src="./img/Wikipedia_logo_silver_transparent.png" id="wikiClick">
             </a>
+
         </div>
 
-        <input class="form-control" id="searchInput">
-        <button id="search" type="button" class="btn btn-primary">Submit</button>
+        <div class="input-group">
+            <input class="form-control" id="searchInput">
+            <span class="input-group-btn">
+                <button id="search" type="button" class="btn btn-primary">Search</button>
+            </span>
+        </div>
+
         <ul id="output">
 
         </ul>

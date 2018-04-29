@@ -1,11 +1,22 @@
 body {
-    background-image: url('../img/library-blurred-bg.png')
+    background-image: url('../img/library-blurred-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center fixed;
 }
 
 button {
     margin: 1%;
 }
 
+#topBox {
+    margin: 5%;
+}
+
 #wikiClick {
     width: 20%;
+}
+
+#searchInput {
+    width: 50%;
 }
