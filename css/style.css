@@ -9,7 +9,9 @@ button {
     margin: 1%;
 }
 
-h1, h4, p {
+h1,
+h4,
+p {
     color: beige;
 }
 
@@ -29,7 +31,12 @@ a {
 
 #wikiClick {
     width: 20%;
-    margin: 1%;
+    margin-top: 3%;
+}
+
+#wikiClick:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(222, 184, 135));
+    filter: drop-shadow(5px 5px 5px rgb(222,184,135));
 }
 
 #searchInput {
