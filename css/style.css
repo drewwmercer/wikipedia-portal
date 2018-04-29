@@ -1,3 +1,7 @@
+body {
+    background-image: url('../img/library-blurred-bg.png')
+}
+
 #wikiClick {
     width: 20%;
 }
